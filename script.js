@@ -35,7 +35,7 @@ window.initPortfolio = () => {
   document.body.append(lightbox);
   const lightboxImage = lightbox.querySelector('img');
   const closeLightbox = () => lightbox.classList.remove('is-open');
-  document.querySelectorAll('.malika-gallery img, .bpbd-gallery img').forEach((image) => {
+  document.querySelectorAll('.malika-gallery img, .bpbd-gallery img, .design-gallery img').forEach((image) => {
     image.addEventListener('click', () => {
       lightboxImage.src = image.src;
       lightboxImage.alt = image.alt;
